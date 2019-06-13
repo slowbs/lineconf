@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 function send_line_notify($message, $token)
 {
   $ch = curl_init();
@@ -43,7 +43,7 @@ for($i = 0; $i < count ($num); $i++){
     if($i % 10 == 0){
             $newArray = array_slice($num, $i, 10);
             $message = implode('',$newArray);
-            $token = 'PCfN31qCGXpQyJKCAGfolAGG12P1tCuQGZ8eLgVwVgY';
+            $token = '';
             //echo $message;
             echo send_line_notify($message, $token);
     }

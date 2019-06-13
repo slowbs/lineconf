@@ -3,7 +3,7 @@
 $curl = curl_init();
 $date = date("Y-m-d",strtotime("-2 day"));  //ทดสอบการเปลี่ยนวันของวันของตัวแปร
 //$date = date("Y-m-d");
-$url = "http://conf.moph.go.th/showDetailCalenderVDO.php?page=view_detail&day=$date";
+$url = "http://conf.moph.go.th/showDetailCalenderVDO.php?page=view_detail&day=2019-05-14";
 
 curl_setopt($curl, CURLOPT_URL, $url);
 curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
